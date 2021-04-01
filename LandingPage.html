@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+
+        #header{
+            background-color:black;
+            width: 100%;
+            position:fixed;
+            top:0px;
+            left:0px;
+                        
+        }
+        #header-img{
+            float: left;
+            margin-left: 5%;     
+            top:0px;
+            width:120px;
+
+        }
+        #nav-bar{
+            display: block;
+            margin-right: 5%;
+        }
+        .nav-link{
+            display: inline;
+            float: right;
+            padding: 55px 4% 55px 4%;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 1.1rem;
+        }
+        .nav-link:hover{
+            background-color:rgba(16, 143, 160, 0.4);
+        }
+        a, a:hover{
+            color: rgba(186, 177, 245, 0.7);
+            text-decoration: none;
+        }
+               
+        
+
+
+        body{
+            background-color: rgba(217, 213, 202, 1);
+        }
+        @media (max-size:300px) {
+            body{
+                background-color: blue;
+            }
+        }
+
+        #form{
+            margin-top: 2000px;
+        }
+    </style>
+    <title>Dr. Sharp's New Used Books</title>    
+</head>
+
+<body>
+    <div id="navigation">
+    <header id="header">
+    
+            <img
+            id="header-img"
+            src="https://github.com/zerokanada/UsedBooksLandingPage/blob/main/drsharplogo-black.png?raw=true"
+            alt="Dr.Sharp company logo">
+            <nav id="nav-bar">
+                
+                <li class="nav-link"><a href="#about-section">About</a></li>
+                <li class="nav-link"><a href="#about-section">Selection</a></li>
+                <li class="nav-link"><a href="#about-section">Contact</a></li>
+            </nav>
+       
+    </header>
+    </div>
+<div style="margin-top:250px">
+
+    <form id="form">
+        <label for="email"></label>
+        <input 
+           type="email" 
+           id="email" 
+           name="email" 
+           placeholder="e-mail" 
+           class="forminput"
+           required>
+           <input type="submit"
+           id="submit"></input>
+    </form>
+</div>
+
+<footer>&copy; 2021 Dr. Sharp</footer>
+</body>
+</html>
