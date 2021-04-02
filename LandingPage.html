@@ -2,7 +2,11 @@
 <html>
 <head>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap');
+        #navigation{
+            position:fixed;
 
+        }
         #header{
             background-color:black;
             width: 100%;
@@ -15,49 +19,74 @@
             float: left;
             margin-left: 5%;     
             top:0px;
-            width:120px;
+            width:110px;
 
         }
-        #nav-bar{
-            display: block;
+      /*  #nav-bar{
+
+            flex-wrap: wrap;
             margin-right: 5%;
+        }*/
+        nav > ul{
+            display: flex;
+            flex-direction:row;
+            justify-content: space-around;
+            ;
+
         }
         .nav-link{
-            display: inline;
-            float: right;
-            padding: 55px 4% 55px 4%;
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 1.1rem;
+            display:block;
+                       
+            font-family:Bahnschrift, 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
         }
         .nav-link:hover{
+            padding-top:55px;
+            padding-bottom:55px;
             background-color:rgba(16, 143, 160, 0.4);
         }
         a, a:hover{
             color: rgba(186, 177, 245, 0.7);
             text-decoration: none;
+            font-size:22px;
         }
-               
-        
-
-
         body{
             background-color: rgba(217, 213, 202, 1);
+            color: black;
+            padding-left:20%;
+            padding-right:20%;
+            font-family:"Bahnschrift Light", "Raleway",Arial, sans-serif;
+
         }
-        @media (max-size:300px) {
+        @media (max-size:350px) {
             body{
-                background-color: blue;
+                padding-left:10%;
+                padding-right:10%;
             }
         }
+        .ourmission{
+            width:100%;
+            max-width:1000px;
+            margin-top:140px;
+            background-color:rgba(216, 215, 199,1);
+        }
+
+              
+        #video{
+            display:inline;
+        }
+        
 
         #form{
-            margin-top: 2000px;
+            display:flex;
+            margin-top: 0px;
         }
     </style>
     <title>Dr. Sharp's New Used Books</title>    
 </head>
 
 <body>
-    <div id="navigation">
+<div id="navigation">
     <header id="header">
     
             <img
@@ -65,30 +94,81 @@
             src="https://github.com/zerokanada/UsedBooksLandingPage/blob/main/drsharplogo-black.png?raw=true"
             alt="Dr.Sharp company logo">
             <nav id="nav-bar">
+               <ul>
+                <li><a class="nav-link" href="#ourmission">Our Mission</a></li>
+                <li><a class="nav-link" href="#whyus">Why Us</a></li>                
+                <li><a class="nav-link" href="#contact">Contact</a></li>
+
                 
-                <li class="nav-link"><a href="#about-section">About</a></li>
-                <li class="nav-link"><a href="#about-section">Selection</a></li>
-                <li class="nav-link"><a href="#about-section">Contact</a></li>
+            </ul>
             </nav>
        
     </header>
-    </div>
-<div style="margin-top:250px">
+</div>
 
-    <form id="form">
-        <label for="email"></label>
-        <input 
-           type="email" 
-           id="email" 
-           name="email" 
-           placeholder="e-mail" 
-           class="forminput"
-           required>
-           <input type="submit"
-           id="submit"></input>
-    </form>
+ <!--OUR MISSION SECTION-->   
+ <div class="ourmission">
+ <section id="ourmission">
+   
+        <h1>Our Mission</h1>
+        <p>Five years ago, a group of friends came together when they realized 
+            that they didn't want to throw away their new books, but needed to 
+            make space for other things. They decided to give new life to those 
+            old favorites, repairing the covers and cleaning their marks before
+            putting them up for sale.</p>
+        <p>The project grew and eventually a physical shop was established where
+            people came to donate their own books and purchase "new" old ones from us</p>
+        <p>Thus, the Dr. Sharp bookstore came to be.</p>
+        
+</section>
+</div>
+
+<div>
+    <iframe id="video" 
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/A-jzAyOO6d4"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; 
+    clipboard-write; 
+    encrypted-media; 
+    gyroscope;" allowfullscreen>
+    </iframe>
+
+</div>
+
+<!--WHY US SECTION-->
+<section id="whyus">
+    <h1>Why Us</h1>
+    <p> We are more than just a
+        second-hand bookshop. Our books are carefully [repaired] and curated
+        before they make their way into our shelves. Here you will get the 
+        charming look of a pre-owned book with the quality you would expect
+        from a new [ejemplar].</p>
+</section>
+
+
+
+<!--CONTACT SECTION-->
+<div>
+    <section id="contact">
+        <form id="form">
+            <label for="email"></label>
+            <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="e-mail" 
+            class="forminput"
+            required>
+            <input type="submit"
+            id="submit"></input>
+        </form>
+    </section>
 </div>
 
 <footer>&copy; 2021 Dr. Sharp</footer>
 </body>
 </html>
+
